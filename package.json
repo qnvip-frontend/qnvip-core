@@ -1,0 +1,54 @@
+{
+  "name": "@qnvip/core",
+  "version": "2.2.7",
+  "description": "",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "pnpm i",
+    "serve": "rollup -c -w",
+    "build": "pnpm run test && rollup -c",
+    "test": "jest"
+  },
+  "keywords": [
+    "utils",
+    "toolkit",
+    "javascript",
+    "typescript"
+  ],
+  "author": "qnvip",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/bundle.esm.js",
+      "require": "./dist/bundle.cjs.js"
+    },
+    "./dist/style/index.css": "./dist/style/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-typescript": "^7.26.0",
+    "@babel/runtime": "^7.26.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rollup": "^4.34.6",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.7.2",
+    "typedoc": "^0.25.12",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "vitepress": "^1.0.0-rc.45"
+  }
+}

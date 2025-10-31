@@ -1,0 +1,5 @@
+
+# GitHub 不需要的文件
+node_modules/
+dist/
+.DS_Store
